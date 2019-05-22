@@ -61,20 +61,26 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int title;
         switch (menuItem.getItemId()) {
-            case R.id.h1:
+            case R.id.master:
                 title = R.string.menu_camera;
                 break;
-            case R.id.h2:
-                title = R.string.menu_gallery;
+            case R.id.hijo:
+                title = R.string.menu_h1;
                 break;
-            case R.id.nav_manage:
-                title = R.string.menu_tools;
+            case R.id.invitado:
+                title = R.string.menu_invi;
                 break;
-            case R.id.nav_share:
-                title = R.string.menu_share;
+            case R.id.cocina:
+                title = R.string.menu_cosi;
                 break;
-            case R.id.nav_send:
-                title = R.string.menu_send;
+            case R.id.bano:
+                title = R.string.menu_bano;
+                break;
+            case R.id.garaje:
+                title = R.string.menu_gara;
+                break;
+            case R.id.patio:
+                title = R.string.menu_pati;
                 break;
             default:
                 throw new IllegalArgumentException("menu option not implemented!!");
