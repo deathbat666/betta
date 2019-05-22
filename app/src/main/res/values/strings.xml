@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">betta</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_click">Title click</string>
+    <string name="menu_camera">Habitacion princpal</string>
+    <string name="menu_gallery">Habitacion hijos</string>
+    <string name="menu_invi">Habitacion Invitados</string>
+    <string name="menu_cosi">Cosina</string>
+    <string name="menu_come">Comedor</string>
+    <string name="menu_gara">Garaje</string>
+    <string name="menu_bano">Baños</string>
+    <string name="menu_entrada"></string>
+    <string name="menu_salo">Salon</string>
+    <string name="menu_tools">Entradas</string>
+    <string name="menu_share">Agregar</string>
+    <string name="menu_send">Reiniciar sistema</string>
+    <string name="menu_group">Accesos</string>
+    <string name="copyright">© Erwin Avila</string>
+</resources>
