@@ -1,5 +1,6 @@
 package com.example.pc.betta;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -14,7 +15,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener,
+        FragmentHome.OnFragmentInteractionListener{
 
     private DrawerLayout drawerLayout;
         @Override
@@ -60,40 +62,43 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         int title;
+        boolean FragmentTransicion=false;
+        Fragment fragment=null;
         switch (menuItem.getItemId()) {
             case R.id.master:
-                title = R.string.menu_camera;
+
                 break;
             case R.id.hijo:
-                title = R.string.menu_h1;
+                fragment=new FragmentHome();
+                FragmentTransicion=true;
                 break;
             case R.id.invitado:
-                title = R.string.menu_invi;
+
                 break;
             case R.id.cocina:
-                title = R.string.menu_cosi;
+
                 break;
             case R.id.bano:
-                title = R.string.menu_bano;
+
                 break;
             case R.id.garaje:
-                title = R.string.menu_gara;
+
                 break;
             case R.id.patio:
-                title = R.string.menu_pati;
+
                 break;
             default:
                 throw new IllegalArgumentException("menu option not implemented!!");
         }
 
-        Fragment fragment = HomeContentFragment.newInstance(getString(title));
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.home_content, fragment).commit();
-
-        setTitle(getString(title));
-
+        if(FragmentTransicion){
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.home_content,fragment)
+                    .commit();
+            menuItem.setChecked(true);
+            getSupportActionBar().setTitle(menuItem.getTitle());
+        }
         drawerLayout.closeDrawer(GravityCompat.START);
-
         return true;
     }
 
@@ -122,6 +127,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public void onDrawerStateChanged(int i) {
         //cambio de estado, puede ser STATE_IDLE, STATE_DRAGGING or STATE_SETTLING
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
     /*protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

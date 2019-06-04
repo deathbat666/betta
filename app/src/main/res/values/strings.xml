@@ -5,14 +5,17 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="title_click">Title click</string>
     <string name="menu_camera">Master</string>
-    <string name="menu_h1">Hijo</string>
-    <string name="menu_invi">Invitado</string>
+    <string name="menu_h1">Cuarto 1</string>
+    <string name="menu_invi">Cuarto 2</string>
     <string name="menu_cosi">Cocina</string>
     <string name="menu_sala">Sala</string>
     <string name="menu_gara">Garaje</string>
-    <string name="menu_bano">Baño</string>
+    <string name="menu_bano">Lavanderia</string>
     <string name="menu_pati">Patio</string>
     <string name="menu_share">Agregar</string>
     <string name="menu_send">Reiniciar sistema</string>
     <string name="copyright">© Erwin Avila</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
