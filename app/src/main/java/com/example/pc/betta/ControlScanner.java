@@ -37,6 +37,7 @@ public class ControlScanner extends AppCompatActivity{
     private void escanear() {
         Intent i = new Intent(ControlScanner.this, ActivityEscanear.class);
         startActivityForResult(i, CODIGO_INTENT);
+        finish();
     }
 
 

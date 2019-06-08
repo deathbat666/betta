@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -15,8 +14,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.pc.betta.FragmentMasterpro.FragmentMaster;
+import com.example.pc.betta.gridview.FragmentHome;
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener,
-        FragmentHome.OnFragmentInteractionListener{
+        FragmentHome.OnFragmentInteractionListener,FragmentMaster.OnFragmentInteractionListener {
 
     private DrawerLayout drawerLayout;
         @Override
@@ -61,15 +63,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        int title;
+
         boolean FragmentTransicion=false;
         Fragment fragment=null;
         switch (menuItem.getItemId()) {
             case R.id.master:
-
+                fragment=new FragmentHome();
+                FragmentTransicion=true;
                 break;
             case R.id.hijo:
-                fragment=new FragmentHome();
+                fragment=new FragmentMaster();
                 FragmentTransicion=true;
                 break;
             case R.id.invitado:
@@ -90,7 +93,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             default:
                 throw new IllegalArgumentException("menu option not implemented!!");
         }
-
         if(FragmentTransicion){
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.home_content,fragment)

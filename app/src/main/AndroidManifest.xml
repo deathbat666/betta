@@ -24,7 +24,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityEscanear"></activity>
+        <activity android:name=".ActivityEscanear" />
+        <activity android:name=".nuevaActividadPrueba"></activity>
     </application>
 
 </manifest>
