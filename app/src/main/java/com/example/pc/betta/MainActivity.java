@@ -14,11 +14,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 
+
 import com.example.pc.betta.FragmentMasterpro.FragmentMaster;
 import com.example.pc.betta.gridview.FragmentHome;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener,
-        FragmentHome.OnFragmentInteractionListener,FragmentMaster.OnFragmentInteractionListener {
+        FragmentHome.OnFragmentInteractionListener, FragmentMaster.OnFragmentInteractionListener {
 
     private DrawerLayout drawerLayout;
         @Override

@@ -14,7 +14,7 @@ public class HomeActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent home= new Intent(HomeActivity.this,ActivityEscanear.class);
+                Intent home= new Intent(HomeActivity.this,MainActivity.class);//cambiar a ActivityEscanear
                 startActivity(home);
                 finish();
             }
