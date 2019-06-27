@@ -15,11 +15,20 @@ import android.view.View;
 import android.widget.Toast;
 
 
-import com.example.pc.betta.FragmentMasterpro.FragmentMaster;
-import com.example.pc.betta.gridview.FragmentHome;
+import com.example.pc.betta.FragmentCocina.Fragment_Cocina;
+import com.example.pc.betta.FragmentFirstCuarto.FragmentFirst;
+import com.example.pc.betta.FragmentGaraje.Fragment_Garaje;
+import com.example.pc.betta.FragmentHome_Master.FragmentHome;
+import com.example.pc.betta.FragmentLavanderia.Fragment_Lavanderia;
+import com.example.pc.betta.FragmentPatio.Fragment_Patio;
+import com.example.pc.betta.FragmentSala.Fragment_Sala;
+import com.example.pc.betta.FragmentSecondCuarto.FragmentSecond;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, DrawerLayout.DrawerListener,
-        FragmentHome.OnFragmentInteractionListener, FragmentMaster.OnFragmentInteractionListener {
+        FragmentHome.OnFragmentInteractionListener, FragmentFirst.OnFragmentInteractionListener, FragmentSecond.OnFragmentInteractionListener,
+        Fragment_Cocina.OnFragmentInteractionListener,Fragment_Sala.OnFragmentInteractionListener, Fragment_Lavanderia.OnFragmentInteractionListener,
+        Fragment_Patio.OnFragmentInteractionListener,Fragment_Garaje.OnFragmentInteractionListener
+{
 
     private DrawerLayout drawerLayout;
         @Override
@@ -73,23 +82,32 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 FragmentTransicion=true;
                 break;
             case R.id.hijo:
-                fragment=new FragmentMaster();
+                fragment=new FragmentFirst();
                 FragmentTransicion=true;
                 break;
             case R.id.invitado:
-
+                fragment= new FragmentSecond();
+                FragmentTransicion=true;
                 break;
             case R.id.cocina:
-
+                fragment= new Fragment_Cocina();
+                FragmentTransicion=true;
                 break;
-            case R.id.bano:
-
+            case R.id.sala:
+                fragment= new Fragment_Sala();
+                FragmentTransicion=true;
+                break;
+            case R.id.lavanderia:
+                fragment= new Fragment_Lavanderia();
+                FragmentTransicion=true;
                 break;
             case R.id.garaje:
-
+                fragment= new Fragment_Garaje();
+                FragmentTransicion=true;
                 break;
             case R.id.patio:
-
+                fragment= new Fragment_Patio();
+                FragmentTransicion=true;
                 break;
             default:
                 throw new IllegalArgumentException("menu option not implemented!!");

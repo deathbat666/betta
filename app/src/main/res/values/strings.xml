@@ -10,7 +10,7 @@
     <string name="menu_cosi">Cocina</string>
     <string name="menu_sala">Sala</string>
     <string name="menu_gara">Garaje</string>
-    <string name="menu_bano">Lavanderia</string>
+    <string name="menu_lav">Lavanderia</string>
     <string name="menu_pati">Patio</string>
     <string name="menu_share">Agregar</string>
     <string name="menu_send">Reiniciar sistema</string>

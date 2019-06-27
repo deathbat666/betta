@@ -1,4 +1,4 @@
-package com.example.pc.betta.gridview;
+package com.example.pc.betta.FragmentSala;
 
 import android.content.Context;
 import android.view.View;
@@ -6,14 +6,13 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
 
 import com.example.pc.betta.R;
 
-class MyAdapter extends BaseAdapter {
+public class MyAdapterSala extends BaseAdapter {
     private Context mContext;
 
-    public MyAdapter(Context c) {
+    public MyAdapterSala(Context c) {
         mContext = c;
     }
     public int getCount() {
@@ -38,16 +37,14 @@ class MyAdapter extends BaseAdapter {
         } else {
             imageView = (ImageView) convertView;
         }
-
         imageView.setImageResource(mThumbIds[position]);
         return imageView;
     }
 
     private Integer[] mThumbIds = {
             R.drawable.aire,
-            R.drawable.foco,
-            R.drawable.puerta,
-            R.drawable.foco
+            R.drawable.tv,
+            R.drawable.tv, //musica
+            R.drawable.foco //son itermintente ambos
     };
-
 }

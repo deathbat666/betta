@@ -29,9 +29,9 @@
             android:icon="@drawable/ic_tv_black_24dp"
             android:title="@string/menu_sala" />
         <item
-            android:id="@+id/bano"
+            android:id="@+id/lavanderia"
             android:icon="@drawable/ic_wc_black_24dp"
-            android:title="@string/menu_bano"/>
+            android:title="@string/menu_lav"/>
     </group>
     <group
         android:checkableBehavior="single"

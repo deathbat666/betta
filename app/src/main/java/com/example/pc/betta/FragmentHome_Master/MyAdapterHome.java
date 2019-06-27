@@ -1,4 +1,4 @@
-package com.example.pc.betta.FragmentMasterpro;
+package com.example.pc.betta.FragmentHome_Master;
 
 import android.content.Context;
 import android.view.View;
@@ -7,16 +7,14 @@ import android.widget.BaseAdapter;
 import android.widget.GridView;
 import android.widget.ImageView;
 
-
 import com.example.pc.betta.R;
 
-public class MyAdapterMaster extends BaseAdapter {
+class MyAdapterHome extends BaseAdapter {
     private Context mContext;
 
-    public MyAdapterMaster(Context c) {
+    public MyAdapterHome(Context c) {
         mContext = c;
     }
-
     public int getCount() {
         return mThumbIds.length;
     }
@@ -29,7 +27,6 @@ public class MyAdapterMaster extends BaseAdapter {
         return 0;
     }
 
-
     public View getView(int position, View convertView, ViewGroup parent) {
         ImageView imageView;
         if (convertView == null) {  // if it's not recycled, initialize some attributes
@@ -40,7 +37,6 @@ public class MyAdapterMaster extends BaseAdapter {
         } else {
             imageView = (ImageView) convertView;
         }
-
         imageView.setImageResource(mThumbIds[position]);
         return imageView;
     }
@@ -48,6 +44,6 @@ public class MyAdapterMaster extends BaseAdapter {
     private Integer[] mThumbIds = {
             R.drawable.aire,
             R.drawable.foco,
-            R.drawable.puerta, R.drawable.foco,
+            R.drawable.tv
     };
 }
