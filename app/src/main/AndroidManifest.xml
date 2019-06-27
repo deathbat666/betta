@@ -27,6 +27,7 @@
         </activity>
         <activity android:name=".ActivityEscanear" />
         <activity android:name=".nuevaActividadPrueba"></activity>
+        <activity android:name=".ActividadLed"></activity>
     </application>
 
 </manifest>

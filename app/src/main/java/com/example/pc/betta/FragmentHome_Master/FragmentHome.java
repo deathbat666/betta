@@ -11,6 +11,7 @@ package com.example.pc.betta.FragmentHome_Master;
         import android.widget.GridView;
         import android.widget.Toast;
 
+        import com.example.pc.betta.ActividadLed;
         import com.example.pc.betta.R;
         import com.example.pc.betta.nuevaActividadPrueba;
 
@@ -35,7 +36,7 @@ public class FragmentHome extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(position==0){
-                    Intent i= new Intent(view.getContext(), nuevaActividadPrueba.class);
+                    Intent i= new Intent(view.getContext(), ActividadLed.class);
                     startActivity(i);
                 }else {
                     Toast.makeText(getContext(), "Position: " + position, Toast.LENGTH_SHORT).show();
