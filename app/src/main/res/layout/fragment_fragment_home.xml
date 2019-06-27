@@ -11,7 +11,6 @@
     android:layout_gravity="center"
     app:layout_gravity="center"
     android:paddingRight="5px">
-
 <LinearLayout
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
