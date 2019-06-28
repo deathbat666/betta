@@ -42,7 +42,7 @@ public class MyAdapterPatio extends BaseAdapter {
     }
 
     private Integer[] mThumbIds = {
-            R.drawable.puerta,
             R.drawable.foco,
+            R.drawable.puerta,
     };
 }

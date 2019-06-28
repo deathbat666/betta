@@ -42,6 +42,6 @@ public class MyAdapterLavanderia extends BaseAdapter {
     }
     private Integer[] mThumbIds = {
             R.drawable.foco,
-            R.drawable.tv //lavadora
+            R.drawable.lavadora //lavadora
     };
 }

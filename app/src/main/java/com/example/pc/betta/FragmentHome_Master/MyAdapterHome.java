@@ -42,8 +42,8 @@ class MyAdapterHome extends BaseAdapter {
     }
 
     private Integer[] mThumbIds = {
-            R.drawable.aire,
             R.drawable.foco,
+            R.drawable.aire,
             R.drawable.tv
     };
 }

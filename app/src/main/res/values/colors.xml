@@ -6,6 +6,7 @@
     <item name="primary" type="color">#9a28a1</item>
     <item name="primaryDark" type="color">#5c1760</item>
     <item name="Icon" type="color">#15aaf4</item>
+    <item name="textGrey" type="color">#15aaf4</item>
     <array name="gradient">
         <item>#b5fff6</item>
         <item>#00ffdf</item>

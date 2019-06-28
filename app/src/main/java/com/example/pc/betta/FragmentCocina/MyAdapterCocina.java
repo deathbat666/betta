@@ -43,9 +43,9 @@ public class MyAdapterCocina extends BaseAdapter {
 
     private Integer[] mThumbIds = {
             R.drawable.foco,
-            R.drawable.foco,// cocina
-            R.drawable.foco,//arrocera
-            R.drawable.aire,
-            R.drawable.tv
+            R.drawable.aire,// cocina
+            R.drawable.tv,//arrocera
+            R.drawable.cocina,
+            R.drawable.arrocera
     };
 }

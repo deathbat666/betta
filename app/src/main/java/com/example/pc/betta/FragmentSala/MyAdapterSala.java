@@ -42,9 +42,9 @@ public class MyAdapterSala extends BaseAdapter {
     }
 
     private Integer[] mThumbIds = {
+            R.drawable.foco,
             R.drawable.aire,
-            R.drawable.tv,
             R.drawable.tv, //musica
-            R.drawable.foco //son itermintente ambos
+            R.drawable.audio //son itermintente ambos
     };
 }
